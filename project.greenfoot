@@ -1,8 +1,15 @@
 #Greenfoot properties
-#Tue Mar 22 02:45:01 JST 2016
+#Tue Mar 22 03:10:47 JST 2016
+class.Leaf.image=leaf.png
+class.Wombat.image=wombat.png
+mainWindow.width=850
+class.Field.image=cell.jpg
+class.Wombat.superclass=greenfoot.Actor
 project.charset=UTF-8
 version=2.8.0
+world.lastInstantiated=Field
 mainWindow.y=40
+class.Leaf.superclass=greenfoot.Actor
 mainWindow.x=40
+class.Field.superclass=greenfoot.World
 mainWindow.height=600
-mainWindow.width=850

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Wombat
+comment0.text=\n\ A\ wombat\ that\ lives\ in\ the\ field\ and\ search\ for\ leafs.\n\ \n\ @author\ Gabriel\ Tib\u00FArcio\n\ @version\ 2016/03/20\n
+comment1.params=
+comment1.target=Wombat()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ Act\ -\ do\ whatever\ the\ Wombat\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment3.params=
+comment3.target=int\ getLeavesEaten()
+comment3.text=\n\ Return\ the\ number\ of\ leafs\ the\ wombat\ has\ eaten.\n
+numComments=4
