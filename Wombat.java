@@ -109,7 +109,7 @@ public class Wombat extends Actor
         if(Greenfoot.isKeyDown("left")) {
             turnLeft();
         }
-        else if(Greenfoot.isKeyDown("right")) {
+        if(Greenfoot.isKeyDown("right")) {
             turnRight();
         }
     }

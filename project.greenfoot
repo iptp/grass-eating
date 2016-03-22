@@ -1,9 +1,9 @@
 #Greenfoot properties
-#Tue Mar 22 09:24:45 JST 2016
+#Tue Mar 22 09:32:08 JST 2016
 readme.name=@README
 class.Leaf.image=leaf.png
 target2.name=Wombat
-simulation.speed=27
+simulation.speed=23
 dependency1.from=Field
 target2.showInterface=false
 dependency3.from=Wombat
@@ -30,7 +30,7 @@ target3.height=50
 target1.showInterface=false
 target3.typeParameters=
 target1.name=Field
-editor.swing.0.width=701
+editor.swing.0.width=700
 editor.fx.0.width=700
 class.Wombat.image=wombat.png
 readme.y=10
