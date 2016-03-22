@@ -17,15 +17,14 @@ public class Field extends World
         super(10, 10, 60);
         setBackground("cell.jpg");
         setPaintOrder(Wombat.class, Leaf.class);
+        populate();
     }
     
     /**
      * Populate the world with a fixed scenario of wombats and leaves.
      */
     public void populate() {
-        addObject(new Wombat(), 7, 1);
-        addObject(new Wombat(), 6, 6);
-        addObject(new Wombat(), 1, 7);
+        addObject(new Wombat(), 4, 4);
         randomLeaves(15);
     }
     

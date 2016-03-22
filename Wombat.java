@@ -19,6 +19,7 @@ public class Wombat extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() {
+        checkKeyboard();
         if(foundLeaf()) {
             eatLeaf();
         }
@@ -26,6 +27,53 @@ public class Wombat extends Actor
             move();
         }
     }  
+    
+    /**
+     * Move the wombat in it's current rotation
+     */
+    public void move() {
+        move(1);
+    }
+    
+    /**
+     * Turn left by 90 degrees.
+     */
+    public void turnLeft() {
+        turn(-90);
+    }
+    
+    /**
+     * Turn right by 90 degrees.
+     */
+    public void turnRight() {
+        turn(90);
+    }
+    
+    /**
+     * Return whether the wombat can move forward or not.
+     */
+    public boolean canMove() {
+        if(!isAtEdge()) {
+            return true;
+        }
+        else {
+            int rotation = getRotation();
+            int width = getWorld().getWidth() - 1;
+            int height = getWorld().getHeight() - 1;
+            int x = getX();
+            int y = getY();
+            if(rotation == 0 && x == width) {
+                return false;
+            } else if(rotation == 90 && y == height) {
+                return false;
+            } else if(rotation == 180 && x == 0) {
+                return false;
+            } else if(rotation == 270 && y == 0) {
+                return false;
+            }
+            return true;
+        }
+    }
     
     /**
      * Check whether there is a leaf in the same cell as we are.
@@ -51,6 +99,18 @@ public class Wombat extends Actor
             // eat the leaf...
             getWorld().removeObject(leaf);
             leavesEaten = leavesEaten + 1; 
+        }
+    }
+    
+    /**
+     * Check keyboard for input of arrow keys
+     */
+    private void checkKeyboard() {
+        if(Greenfoot.isKeyDown("left")) {
+            turnLeft();
+        }
+        else if(Greenfoot.isKeyDown("right")) {
+            turnRight();
         }
     }
     
